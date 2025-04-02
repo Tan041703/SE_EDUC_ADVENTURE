@@ -1,0 +1,300 @@
+/* Fullscreen Background for Game */
+.game-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-size: cover; /* Ensures the background fully covers */
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Align difficulty selection, play button, and instructions to the left */
+.start-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 20px;
+  gap: 15px; /* Adds spacing between elements */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap');
+
+.word-title {
+  font-family: 'Rubik Spray Paint', sans-serif;
+  font-size: 6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #FF9A8B, #FF6A88, #FF99AC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 4px 4px 0px rgba(255, 255, 255, 0.6);
+  display: inline-block;
+  position: relative;
+}
+
+.word-title::after {
+  content: "🖌️";
+  font-size: 3rem;
+  position: absolute;
+  right: -50px;
+  top: -20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap');
+
+/* Add this new rule for the app background */
+.App {
+  background-color: #f69218; /* Soft pink background */
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.word-title {
+  font-family: 'Rubik Spray Paint', sans-serif;
+  font-size: 6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #FF9A8B, #FF6A88, #FF99AC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 4px 4px 0px rgba(255, 255, 255, 0.6);
+  display: inline-block;
+  position: relative;
+  margin-top: 0;
+}
+
+.word-title::after {
+  content: "🖌️";
+  font-size: 3rem;
+  position: absolute;
+  right: -50px;
+  top: -20px;
+}
+
+/* Enhance Play Button Design */
+.play-button {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  border: none;
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.play-button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(to right, #ff6b6b, #ffa07a);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Improve Difficulty Selection Dropdown */
+select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.2s ease;
+}
+
+select:hover {
+  background: #f5f5f5;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Improve Instructions Button */
+.instructions-btn {
+  background: #3498db;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.instructions-btn:hover {
+  background: #2980b9;
+  transform: scale(1.05);
+}
+
+/* Puzzle Card Design */
+.puzzle-card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  text-align: center;
+}
+
+/* Puzzle Image */
+.puzzle-image {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+/* Word Circle (Jumbled Letters) */
+.word-circle {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+/* Letter Buttons */
+.circle-letter {
+  padding: 12px 15px;
+  font-size: 18px;
+  font-weight: bold;
+  background: #ffcc5c;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.circle-letter:hover {
+  background: #ffb84d;
+  transform: scale(1.1);
+}
+
+/* Submit Button */
+.submit-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background: #219150;
+  transform: scale(1.05);
+}
+
+/* Game Over Screen */
+.game-over {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Instructions Modal */
+.instructions-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.instructions-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.instruction-image {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background: #ff5a5a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Medium-Sized "Meet My Team" Section */
+.team-section {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.team-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Team Photos - Medium Size */
+.team-photos {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.team-photo {
+  width: 80px; /* Medium size */
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border: 3px solid #fff;
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.play-button, .submit-btn, .play-again-btn {
+  background-color: #4CAF50; /* Same as play button color */
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.play-button:hover, .submit-btn:hover, .play-again-btn:hover {
+  background-color: #45a049;
+}
+
+
+
